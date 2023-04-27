@@ -1,6 +1,6 @@
 # PDUI
 **Unity projekts**, kas nodrošina izvēlēta **tēla apģērbšanu** un tā **aprīkojuma izvēli**. :tophat: :shirt: :jeans: :shoe:
-![Charecter UI screen](https://images.pushsquare.com/834a3078c55c3/cyberpunk-2077-character-builds-guide-1.large.jpg)
+![Charecter UI screen](https://imgur.com/a/RHNJmLm)
 
 ## Darāmo darbu saraksts
 - [ ] Pielietojot teksta ievades laukus (2.gab.) iespējams ievadīt apģērbjamā tēla vārdu un vecumu
