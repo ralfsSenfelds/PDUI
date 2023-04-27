@@ -1,6 +1,6 @@
 # PDUI
 **Unity projekts**, kas nodrošina izvēlēta **tēla apģērbšanu** un tā **aprīkojuma izvēli**. :tophat: :shirt: :jeans: :shoe:
-![Charecter UI screen](https://imgur.com/a/RHNJmLm)
+![Charecter UI screen](https://image5jvqbd.fmkorea.com/files/attach/new/20201120/2518140/1587963467/3210721112/8c2916737f0d4d2697b435361c6e66cc.jpg)
 
 ## Darāmo darbu saraksts
 - [ ] Pielietojot teksta ievades laukus (2.gab.) iespējams ievadīt apģērbjamā tēla vārdu un vecumu
