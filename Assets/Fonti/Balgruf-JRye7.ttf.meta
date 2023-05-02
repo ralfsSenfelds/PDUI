@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 362f3eea77495e740979e9e0fcb9da7d
+timeCreated: 1683061672
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Balgruf
+  fontNames:
+  - Balgruf
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
