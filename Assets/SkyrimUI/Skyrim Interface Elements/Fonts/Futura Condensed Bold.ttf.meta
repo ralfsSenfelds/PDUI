@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cd139217d171cdd4cb98fcba68a97dca
+timeCreated: 1683098953
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Futura Condensed
+  fontNames:
+  - Futura Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 13e8a7a4ee2f7df43be98c5b8a5042ef, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
