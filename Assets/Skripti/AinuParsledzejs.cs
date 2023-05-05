@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class AinuParsledzejs : MonoBehaviour {
 	public void UzSakumu(){
-		SceneManager.LoadScene ("Sakums", LoadSceneMode.Single);
+		SceneManager.LoadScene ("Start", LoadSceneMode.Single);
 	}
 
 	public void UzUI()
