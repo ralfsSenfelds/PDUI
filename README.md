@@ -3,7 +3,7 @@
 ![Charecter UI screen](https://i.imgur.com/xeBM2nO.png)
 
 ## Darāmo darbu saraksts
-- [ ] Pielietojot teksta ievades laukus (2.gab.) iespējams ievadīt apģērbjamā tēla vārdu un vecumu
+- [x] Pielietojot teksta ievades laukus (2.gab.) iespējams ievadīt apģērbjamā tēla vārdu un vecumu
       (šajā laukā iespējams ievadīt tikai skaitļus), pogas nospiešana nodrošina ievadīto vērtību
       attēlošanu teksta laukā (Piemēram: „Supervaronis Oskars ir 19 gadus vecs!”)
 - [ ] Pielietojot izkrītošā saraksta pogu, iespējams izvēlēties vismaz divus tēlus, kurus iespējams
