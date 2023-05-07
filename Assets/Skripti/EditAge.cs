@@ -9,6 +9,7 @@ public class EditAge : MonoBehaviour
     public Text displayText;
     private const int MaxAgeValue = 9999;
     private bool isOKButtonPressed = false;
+    private bool hasAcceptedChanges = false;
 
     private void Start()
     {
@@ -19,7 +20,16 @@ public class EditAge : MonoBehaviour
     {
         int ageValue = PlayerPrefs.GetInt("user_age");
 
-        ageInputField.text = ageValue.ToString();
+        if (hasAcceptedChanges)
+        {
+            ageInputField.placeholder.GetComponent<Text>().text = "";
+            ageInputField.text = ageValue.ToString();
+        }
+        else
+        {
+            ageInputField.placeholder.GetComponent<Text>().text = "Ievadi tēla vecumu...";
+        }
+
         displayText.text = "Vecums: " + ageValue.ToString();
     }
 
@@ -37,7 +47,7 @@ public class EditAge : MonoBehaviour
         else
         {
             ageValue = 0;
-            ageInputField.text = "0";
+            ageInputField.text = "";
         }
 
         displayText.text = "Vecums: " + ageValue.ToString();
@@ -45,6 +55,7 @@ public class EditAge : MonoBehaviour
         PlayerPrefs.SetInt("user_age", ageValue);
         PlayerPrefs.Save();
 
+        hasAcceptedChanges = true;
         isOKButtonPressed = true;
     }
 
