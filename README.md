@@ -13,5 +13,5 @@
 - [ ] Izvēlēto aprīkojumu pēc drag and drop principa iespējams pārvietot un nolikt izvēlētajā vietā
 - [ ] Nodrošināti skaņas efekti (pogu klikšķi, fona mūzika, tēlu izdarītās skaņas)
 - [ ] Ievietota scroll view komponente, kurā lasāms neliels apraksts par projektā iekļautajiem tēliem
-- [ ] Iekļauti divi slider elementi, kur viens maina apģērbjamā tēla garumu, bet otrs platumu
-- [ ] Projekts izstrādāts noteiktajā termiņā un tā izstrāde ir veikta rūpīgi
+- [X] Iekļauti divi slider elementi, kur viens maina apģērbjamā tēla garumu, bet otrs platumu
+- [X] Projekts izstrādāts noteiktajā termiņā un tā izstrāde ir veikta rūpīgi
