@@ -1,6 +1,6 @@
 # Senfelds_UnityUI
 **Unity projekts**, kas nodrošina izvēlēta **tēla apģērbšanu** un tā **aprīkojuma izvēli**. :tophat: :shirt: :jeans: :shoe:
-![Charecter UI screen](https://i.imgur.com/xeBM2nO.png)
+![Charecter UI screen](https://i.imgur.com/w2rXT57.png)
 
 ## Darāmo darbu saraksts
 - [x] Pielietojot teksta ievades laukus (2.gab.) iespējams ievadīt apģērbjamā tēla vārdu un vecumu
