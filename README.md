@@ -8,7 +8,7 @@
       attēlošanu teksta laukā (Piemēram: „Supervaronis Oskars ir 19 gadus vecs!”)
 - [ ] Pielietojot izkrītošā saraksta pogu, iespējams izvēlēties vismaz divus tēlus, kurus iespējams
       apģērbt
-- [ ] Izveidotas vairākas apģērbu un aprīkojuma kategorijas (bikses, zābaki, cepures, cimdi, amuleti,
+- [x] Izveidotas vairākas apģērbu un aprīkojuma kategorijas (bikses, zābaki, cepures, cimdi, amuleti,
       u.tml.) no kurām ar toggle pogu palīdzību iespējams parādīt un paslēpt attiecīgos elementus
 - [ ] Izvēlēto aprīkojumu pēc drag and drop principa iespējams pārvietot un nolikt izvēlētajā vietā
 - [ ] Nodrošināti skaņas efekti (pogu klikšķi, fona mūzika, tēlu izdarītās skaņas)
