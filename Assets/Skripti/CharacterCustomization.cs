@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CharacterCustomization : MonoBehaviour
 {
+    [SerializeField] private BackstoryManager backstoryManager;
     public Image maleCharacterImage; // Attēls vīrieša rakstura attēlošanai
     public Image femaleCharacterImage; // Attēls sievietes rakstura attēlošanai
     public GameObject[] maleBodyParts; // Masīvs, kas satur vīrieša rakstura daļas
@@ -20,6 +21,12 @@ public class CharacterCustomization : MonoBehaviour
     private void Start()
     {
         InitializeCustomization(); // Inicializē rakstura pielāgošanu
+        // Atrod un piešķir BackstoryManager component
+        backstoryManager = FindObjectOfType<BackstoryManager>();
+        if (backstoryManager == null)
+        {
+            Debug.LogError("BackstoryManager component not found in the scene.");
+        }
     }
 
     private void InitializeCustomization()
@@ -69,6 +76,9 @@ public class CharacterCustomization : MonoBehaviour
             SetToggleButtonsActive(false, femaleToggleButtons); // Paslēpj sievietes izvēles pogas
 
             ResetToggleButtons(maleToggleButtons, new int[] { 0, 4, 8 }); // Atiestata vīrieša izvēles pogas
+
+            // Update the backstory text for male gender
+            backstoryManager.UpdateBackstory(true);
         }
         else if (genderIndex == 1) // Izvēlēta sieviete
         {
@@ -81,6 +91,9 @@ public class CharacterCustomization : MonoBehaviour
             SetToggleButtonsActive(false, maleToggleButtons); // Paslēpj vīrieša izvēles pogas
 
             ResetToggleButtons(femaleToggleButtons, new int[] { 2, 4, 8 }); // Atiestata sievietes izvēles pogas
+
+            // Update the backstory text for female gender
+            backstoryManager.UpdateBackstory(false);
         }
 
         SetBodyPartsActive(true, activeBodyParts); // Aktivizē izvēlētās ķermeņa daļas
