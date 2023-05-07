@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,8 @@ public class CharacterCustomization : MonoBehaviour
     public Toggle[] maleToggleButtons; // Masīvs, kas satur vīrieša izvēles pogas
     public Toggle[] femaleToggleButtons; // Masīvs, kas satur sievietes izvēles pogas
     public Dropdown genderDropdown; // Nolaižamais saraksts ar dzimumiem
+    public Slider widthSlider;
+    public Slider heightSlider;
 
     private GameObject[] activeBodyParts; // Masīvs, kas satur pašlaik aktīvās ķermeņa daļas
 
@@ -23,6 +26,12 @@ public class CharacterCustomization : MonoBehaviour
     {
         SetBodyPartsActive(false, maleBodyParts); // Paslēpj vīrieša ķermeņa daļas
         SetBodyPartsActive(false, femaleBodyParts); // Paslēpj sievietes ķermeņa daļas
+
+        // Connect width slider to ChangeWidth method
+        widthSlider.onValueChanged.AddListener(ChangeWidth);
+
+        // Connect height slider to ChangeHeight method
+        heightSlider.onValueChanged.AddListener(ChangeHeight);
 
         SetGender(0); // Iestata noklusēto dzimumu uz vīrieti
 
@@ -104,5 +113,37 @@ public class CharacterCustomization : MonoBehaviour
     private void SetBodyPartActive(GameObject bodyPart, bool isActive)
     {
         bodyPart.SetActive(isActive);
+    }
+
+    private void ChangeWidth(float value)
+    {
+        // Izmaina rakstura platību, pamatojoties uz slīdnis vērtību
+        float widthScale = value != 0f ? 1f + value : 1f; // Ja vērtība nav nulle, pievieno to noklusētajai platības skalai, pretējā gadījumā iestata to uz 0.5
+
+        // Atjaunina rakstura attēla mērogu
+        if (maleCharacterImage.gameObject.activeSelf)
+        {
+            maleCharacterImage.rectTransform.localScale = new Vector3(widthScale, maleCharacterImage.rectTransform.localScale.y, 1f);
+        }
+        else if (femaleCharacterImage.gameObject.activeSelf)
+        {
+            femaleCharacterImage.rectTransform.localScale = new Vector3(widthScale, femaleCharacterImage.rectTransform.localScale.y, 1f);
+        }
+    }
+
+    private void ChangeHeight(float value)
+    {
+        // Izmaina rakstura augstumu, pamatojoties uz slīdnis vērtību
+        float heightScale = value != 0f ? 1f + value : 1f; // Ja vērtība nav nulle, pievieno to noklusētajam augstuma skalai, pretējā gadījumā iestata to uz 0.5
+
+        // Atjaunina rakstura attēla mērogu
+        if (maleCharacterImage.gameObject.activeSelf)
+        {
+            maleCharacterImage.rectTransform.localScale = new Vector3(maleCharacterImage.rectTransform.localScale.x, heightScale, 1f);
+        }
+        else if (femaleCharacterImage.gameObject.activeSelf)
+        {
+            femaleCharacterImage.rectTransform.localScale = new Vector3(femaleCharacterImage.rectTransform.localScale.x, heightScale, 1f);
+        }
     }
 }
